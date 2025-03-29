@@ -44,9 +44,9 @@ A modern authentication system built with Next.js and Supabase featuring email/p
    ```bash
    cp .env.example .env.local
 
+   ```
    Create a `.env.local` file in the root directory with:
 
-   ```
    # Invitation code for users to register
    INVITE_CODE=your_invite_code
    
