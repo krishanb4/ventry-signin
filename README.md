@@ -38,6 +38,12 @@ A modern authentication system built with Next.js and Supabase featuring email/p
 
 3. **Set up environment variables**
 
+
+   Copy the example environment file to create your own local environment file:
+
+   ```bash
+   cp .env.example .env.local
+
    Create a `.env.local` file in the root directory with:
 
    ```
