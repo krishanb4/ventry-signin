@@ -223,7 +223,7 @@ export function SignUpForm() {
             type="text"
             autoComplete="name"
             required
-            className="block w-full appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
+            className="block text-white w-full appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
           />
         </div>
       </div>
@@ -245,7 +245,7 @@ export function SignUpForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onBlur={() => setEmailBlurred(true)}
-            className={`block w-full appearance-none rounded-md border px-3 py-2 shadow-sm focus:outline-none sm:text-sm ${
+            className={`block w-full text-white appearance-none rounded-md border px-3 py-2 shadow-sm focus:outline-none sm:text-sm ${
               emailExists === true
                 ? "border-red-500 bg-red-500/10 text-red-400 focus:border-red-500 focus:ring-red-500"
                 : emailExists === false && !emailError
@@ -292,7 +292,7 @@ export function SignUpForm() {
             autoComplete="new-password"
             required
             minLength={8}
-            className="block w-full appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
+            className="block w-full text-white appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
           />
         </div>
         <p className="mt-1 text-xs text-zinc-400">
@@ -313,7 +313,7 @@ export function SignUpForm() {
             name="inviteCode"
             type="text"
             required
-            className="block w-full appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
+            className="block w-full text-white appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
           />
         </div>
         <p className="mt-1 text-xs text-zinc-400">

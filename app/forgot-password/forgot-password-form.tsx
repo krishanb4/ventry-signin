@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { resetPassword } from "../actions/auth"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { AlertCircle, CheckCircle2 } from "lucide-react"
+import { useState } from "react";
+import { resetPassword } from "../actions/auth";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { AlertCircle, CheckCircle2 } from "lucide-react";
 
 export function ForgotPasswordForm() {
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [success, setSuccess] = useState<string | null>(null)
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setIsLoading(true)
-    setError(null)
-    setSuccess(null)
+    event.preventDefault();
+    setIsLoading(true);
+    setError(null);
+    setSuccess(null);
 
-    const formData = new FormData(event.currentTarget)
-    const response = await resetPassword(formData)
+    const formData = new FormData(event.currentTarget);
+    const response = await resetPassword(formData);
 
-    setIsLoading(false)
+    setIsLoading(false);
 
     if (response.error) {
-      setError(response.error)
-      return
+      setError(response.error);
+      return;
     }
 
-    setSuccess(response.message || "Password reset email sent!")
-    event.currentTarget.reset()
+    setSuccess(response.message || "Password reset email sent!");
+    event.currentTarget.reset();
   }
 
   return (
@@ -55,7 +55,10 @@ export function ForgotPasswordForm() {
       )}
 
       <div>
-        <Label htmlFor="email" className="block text-sm font-medium text-zinc-200">
+        <Label
+          htmlFor="email"
+          className="block text-sm font-medium text-zinc-200"
+        >
           Email address
         </Label>
         <div className="mt-1">
@@ -65,7 +68,7 @@ export function ForgotPasswordForm() {
             type="email"
             autoComplete="email"
             required
-            className="block w-full appearance-none rounded-md border border-zinc-600 bg-zinc-800/50 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-300 focus:outline-none focus:ring-amber-300 sm:text-sm"
+            className="block w-full text-white appearance-none rounded-md border border-zinc-600 bg-zinc-800/50 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-300 focus:outline-none focus:ring-amber-300 sm:text-sm"
           />
         </div>
       </div>
@@ -80,6 +83,5 @@ export function ForgotPasswordForm() {
         </Button>
       </div>
     </form>
-  )
+  );
 }
-

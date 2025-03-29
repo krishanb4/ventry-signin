@@ -89,7 +89,7 @@ export function SignInForm() {
             type="email"
             autoComplete="email"
             required
-            className="block w-full appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
+            className="block w-full text-white appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
           />
         </div>
       </div>
@@ -108,7 +108,7 @@ export function SignInForm() {
             type="password"
             autoComplete="current-password"
             required
-            className="block w-full appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
+            className="block w-full text-white appearance-none rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 placeholder-zinc-400 shadow-sm focus:border-amber-400 focus:outline-none focus:ring-amber-400 sm:text-sm"
           />
         </div>
       </div>

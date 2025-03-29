@@ -54,6 +54,7 @@ export default async function DashboardPage() {
       </div>
 
       <div className="flex flex-1 flex-col items-center justify-center px-6 py-12 lg:px-8">
+        <Image src="/images/ventry-logo.png" width="150" height="100" alt="" />
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Welcome to Ventry
