@@ -1,4 +1,4 @@
-# Next.js + Supabase Auth System 🔐
+# Next.js + Supabase VENTRY Auth System 🔐
 
 A modern authentication system built with Next.js and Supabase featuring email/password login, social provider authentication, and profile management.
 
@@ -23,7 +23,7 @@ A modern authentication system built with Next.js and Supabase featuring email/p
 
    ```bash
    git clone https://github.com/krishanb4/ventry-signin.git
-   cd auth-system
+   cd ventry-signin
    ```
 
 2. **Install dependencies**
